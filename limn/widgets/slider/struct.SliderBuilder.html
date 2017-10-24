@@ -1,0 +1,246 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="generator" content="rustdoc">
+    <meta name="description" content="API documentation for the Rust `SliderBuilder` struct in crate `limn`.">
+    <meta name="keywords" content="rust, rustlang, rust-lang, SliderBuilder">
+
+    <title>limn::widgets::slider::SliderBuilder - Rust</title>
+
+    <link rel="stylesheet" type="text/css" href="../../../normalize.css">
+    <link rel="stylesheet" type="text/css" href="../../../rustdoc.css">
+    <link rel="stylesheet" type="text/css" href="../../../main.css">
+    
+
+    
+    
+</head>
+<body class="rustdoc struct">
+    <!--[if lte IE 8]>
+    <div class="warning">
+        This old browser is unsupported and will most likely display funky
+        things.
+    </div>
+    <![endif]-->
+
+    
+
+    <nav class="sidebar">
+        
+        <p class='location'>Struct SliderBuilder</p><div class="block items"><ul><li><a href="#fields">Fields</a></li><li><a href="#methods">Methods</a></li><li><a href="#deref-methods">Methods from Deref&lt;Target=WidgetBuilder&gt;</a></li><li><a href="#implementations">Trait Implementations</a></li></ul></div><p class='location'><a href='../../index.html'>limn</a>::<wbr><a href='../index.html'>widgets</a>::<wbr><a href='index.html'>slider</a></p><script>window.sidebarCurrent = {name: 'SliderBuilder', ty: 'struct', relpath: ''};</script><script defer src="sidebar-items.js"></script>
+    </nav>
+
+    <nav class="sub">
+        <form class="search-form js-only">
+            <div class="search-container">
+                <input class="search-input" name="search"
+                       autocomplete="off"
+                       placeholder="Click or press ‘S’ to search, ‘?’ for more options…"
+                       type="search">
+            </div>
+        </form>
+    </nav>
+
+    <section id='main' class="content">
+<h1 class='fqn'><span class='in-band'>Struct <a href='../../index.html'>limn</a>::<wbr><a href='../index.html'>widgets</a>::<wbr><a href='index.html'>slider</a>::<wbr><a class="struct" href=''>SliderBuilder</a></span><span class='out-of-band'><span id='render-detail'>
+                   <a id="toggle-all-docs" href="javascript:void(0)" title="collapse all docs">
+                       [<span class='inner'>&#x2212;</span>]
+                   </a>
+               </span><a class='srclink' href='../../../src/limn/widgets/slider.rs.html#37-51' title='goto source code'>[src]</a></span></h1>
+<pre class='rust struct'>pub struct SliderBuilder {
+    pub widget: <a class="struct" href="../../../limn/widget/struct.WidgetBuilder.html" title="struct limn::widget::WidgetBuilder">WidgetBuilder</a>,
+    pub slider_handle: <a class="struct" href="../../../limn/widget/struct.WidgetBuilder.html" title="struct limn::widget::WidgetBuilder">WidgetBuilder</a>,
+    pub orientation: <a class="enum" href="../../../limn/widgets/slider/enum.Orientation.html" title="enum limn::widgets::slider::Orientation">Orientation</a>,
+    pub range: <a class="struct" href="https://doc.rust-lang.org/nightly/core/ops/range/struct.Range.html" title="struct core::ops::range::Range">Range</a>&lt;<a class="primitive" href="https://doc.rust-lang.org/nightly/std/primitive.f32.html">f32</a>&gt;,
+    pub init_value: <a class="enum" href="https://doc.rust-lang.org/nightly/core/option/enum.Option.html" title="enum core::option::Option">Option</a>&lt;<a class="primitive" href="https://doc.rust-lang.org/nightly/std/primitive.f32.html">f32</a>&gt;,
+    pub variable_handle_size: <a class="primitive" href="https://doc.rust-lang.org/nightly/std/primitive.bool.html">bool</a>,
+    pub handle_style: <a class="enum" href="../../../limn/widgets/slider/enum.HandleStyle.html" title="enum limn::widgets::slider::HandleStyle">HandleStyle</a>,
+    pub bar_style: <a class="enum" href="../../../limn/widgets/slider/enum.BarStyle.html" title="enum limn::widgets::slider::BarStyle">BarStyle</a>,
+    pub border: <a class="enum" href="https://doc.rust-lang.org/nightly/core/option/enum.Option.html" title="enum core::option::Option">Option</a>&lt;<a class="primitive" href="https://doc.rust-lang.org/nightly/std/primitive.tuple.html">(</a><a class="primitive" href="https://doc.rust-lang.org/nightly/std/primitive.f32.html">f32</a>, <a class="struct" href="../../../limn/color/struct.Color.html" title="struct limn::color::Color">Color</a><a class="primitive" href="https://doc.rust-lang.org/nightly/std/primitive.tuple.html">)</a>&gt;,
+    pub bar_color: <a class="struct" href="../../../limn/color/struct.Color.html" title="struct limn::color::Color">Color</a>,
+    pub handle_color: <a class="struct" href="../../../limn/color/struct.Color.html" title="struct limn::color::Color">Color</a>,
+    pub highlight: <a class="enum" href="https://doc.rust-lang.org/nightly/core/option/enum.Option.html" title="enum core::option::Option">Option</a>&lt;<a class="struct" href="../../../limn/color/struct.Color.html" title="struct limn::color::Color">Color</a>&gt;,
+    pub width: <a class="primitive" href="https://doc.rust-lang.org/nightly/std/primitive.f32.html">f32</a>,
+}</pre><h2 id='fields' class='fields small-section-header'>
+                       Fields<a href='#fields' class='anchor'></a></h2><span id='structfield.widget' class="structfield">
+                           <span id='widget.v' class='invisible'>
+                           <code>widget: <a class="struct" href="../../../limn/widget/struct.WidgetBuilder.html" title="struct limn::widget::WidgetBuilder">WidgetBuilder</a></code>
+                           </span></span><span id='structfield.slider_handle' class="structfield">
+                           <span id='slider_handle.v' class='invisible'>
+                           <code>slider_handle: <a class="struct" href="../../../limn/widget/struct.WidgetBuilder.html" title="struct limn::widget::WidgetBuilder">WidgetBuilder</a></code>
+                           </span></span><span id='structfield.orientation' class="structfield">
+                           <span id='orientation.v' class='invisible'>
+                           <code>orientation: <a class="enum" href="../../../limn/widgets/slider/enum.Orientation.html" title="enum limn::widgets::slider::Orientation">Orientation</a></code>
+                           </span></span><span id='structfield.range' class="structfield">
+                           <span id='range.v' class='invisible'>
+                           <code>range: <a class="struct" href="https://doc.rust-lang.org/nightly/core/ops/range/struct.Range.html" title="struct core::ops::range::Range">Range</a>&lt;<a class="primitive" href="https://doc.rust-lang.org/nightly/std/primitive.f32.html">f32</a>&gt;</code>
+                           </span></span><span id='structfield.init_value' class="structfield">
+                           <span id='init_value.v' class='invisible'>
+                           <code>init_value: <a class="enum" href="https://doc.rust-lang.org/nightly/core/option/enum.Option.html" title="enum core::option::Option">Option</a>&lt;<a class="primitive" href="https://doc.rust-lang.org/nightly/std/primitive.f32.html">f32</a>&gt;</code>
+                           </span></span><span id='structfield.variable_handle_size' class="structfield">
+                           <span id='variable_handle_size.v' class='invisible'>
+                           <code>variable_handle_size: <a class="primitive" href="https://doc.rust-lang.org/nightly/std/primitive.bool.html">bool</a></code>
+                           </span></span><span id='structfield.handle_style' class="structfield">
+                           <span id='handle_style.v' class='invisible'>
+                           <code>handle_style: <a class="enum" href="../../../limn/widgets/slider/enum.HandleStyle.html" title="enum limn::widgets::slider::HandleStyle">HandleStyle</a></code>
+                           </span></span><span id='structfield.bar_style' class="structfield">
+                           <span id='bar_style.v' class='invisible'>
+                           <code>bar_style: <a class="enum" href="../../../limn/widgets/slider/enum.BarStyle.html" title="enum limn::widgets::slider::BarStyle">BarStyle</a></code>
+                           </span></span><span id='structfield.border' class="structfield">
+                           <span id='border.v' class='invisible'>
+                           <code>border: <a class="enum" href="https://doc.rust-lang.org/nightly/core/option/enum.Option.html" title="enum core::option::Option">Option</a>&lt;<a class="primitive" href="https://doc.rust-lang.org/nightly/std/primitive.tuple.html">(</a><a class="primitive" href="https://doc.rust-lang.org/nightly/std/primitive.f32.html">f32</a>, <a class="struct" href="../../../limn/color/struct.Color.html" title="struct limn::color::Color">Color</a><a class="primitive" href="https://doc.rust-lang.org/nightly/std/primitive.tuple.html">)</a>&gt;</code>
+                           </span></span><span id='structfield.bar_color' class="structfield">
+                           <span id='bar_color.v' class='invisible'>
+                           <code>bar_color: <a class="struct" href="../../../limn/color/struct.Color.html" title="struct limn::color::Color">Color</a></code>
+                           </span></span><span id='structfield.handle_color' class="structfield">
+                           <span id='handle_color.v' class='invisible'>
+                           <code>handle_color: <a class="struct" href="../../../limn/color/struct.Color.html" title="struct limn::color::Color">Color</a></code>
+                           </span></span><span id='structfield.highlight' class="structfield">
+                           <span id='highlight.v' class='invisible'>
+                           <code>highlight: <a class="enum" href="https://doc.rust-lang.org/nightly/core/option/enum.Option.html" title="enum core::option::Option">Option</a>&lt;<a class="struct" href="../../../limn/color/struct.Color.html" title="struct limn::color::Color">Color</a>&gt;</code>
+                           </span></span><span id='structfield.width' class="structfield">
+                           <span id='width.v' class='invisible'>
+                           <code>width: <a class="primitive" href="https://doc.rust-lang.org/nightly/std/primitive.f32.html">f32</a></code>
+                           </span></span>
+                    <h2 id='methods' class='small-section-header'>
+                      Methods<a href='#methods' class='anchor'></a>
+                    </h2>
+                <h3 id='impl' class='impl'><span class='in-band'><code>impl <a class="struct" href="../../../limn/widgets/slider/struct.SliderBuilder.html" title="struct limn::widgets::slider::SliderBuilder">SliderBuilder</a></code><a href='#impl' class='anchor'></a></span><span class='out-of-band'><div class='ghost'></div><a class='srclink' href='../../../src/limn/widgets/slider.rs.html#77-121' title='goto source code'>[src]</a></span></h3>
+<div class='impl-items'><h4 id='method.new' class="method"><span id='new.v' class='invisible'><code>fn <a href='#method.new' class='fnname'>new</a>() -&gt; Self</code></span><span class='out-of-band'><div class='ghost'></div><a class='srclink' href='../../../src/limn/widgets/slider.rs.html#78-80' title='goto source code'>[src]</a></span></h4>
+<h4 id='method.make_vertical' class="method"><span id='make_vertical.v' class='invisible'><code>fn <a href='#method.make_vertical' class='fnname'>make_vertical</a>(&amp;mut self) -&gt; <a class="primitive" href="https://doc.rust-lang.org/nightly/std/primitive.reference.html">&amp;mut </a>Self</code></span><span class='out-of-band'><div class='ghost'></div><a class='srclink' href='../../../src/limn/widgets/slider.rs.html#83-86' title='goto source code'>[src]</a></span></h4>
+<div class='docblock'><p>Sets the orientation of the slider to vertical</p>
+</div><h4 id='method.scrollbar_style' class="method"><span id='scrollbar_style.v' class='invisible'><code>fn <a href='#method.scrollbar_style' class='fnname'>scrollbar_style</a>(&amp;mut self) -&gt; <a class="primitive" href="https://doc.rust-lang.org/nightly/std/primitive.reference.html">&amp;mut </a>Self</code></span><span class='out-of-band'><div class='ghost'></div><a class='srclink' href='../../../src/limn/widgets/slider.rs.html#89-99' title='goto source code'>[src]</a></span></h4>
+<div class='docblock'><p>Sets the scrollbar style</p>
+</div><h4 id='method.set_width' class="method"><span id='set_width.v' class='invisible'><code>fn <a href='#method.set_width' class='fnname'>set_width</a>(&amp;mut self, width: <a class="primitive" href="https://doc.rust-lang.org/nightly/std/primitive.f32.html">f32</a>) -&gt; <a class="primitive" href="https://doc.rust-lang.org/nightly/std/primitive.reference.html">&amp;mut </a>Self</code></span><span class='out-of-band'><div class='ghost'></div><a class='srclink' href='../../../src/limn/widgets/slider.rs.html#101-104' title='goto source code'>[src]</a></span></h4>
+<h4 id='method.set_value' class="method"><span id='set_value.v' class='invisible'><code>fn <a href='#method.set_value' class='fnname'>set_value</a>(&amp;mut self, value: <a class="primitive" href="https://doc.rust-lang.org/nightly/std/primitive.f32.html">f32</a>) -&gt; <a class="primitive" href="https://doc.rust-lang.org/nightly/std/primitive.reference.html">&amp;mut </a>Self</code></span><span class='out-of-band'><div class='ghost'></div><a class='srclink' href='../../../src/limn/widgets/slider.rs.html#105-108' title='goto source code'>[src]</a></span></h4>
+<h4 id='method.set_range' class="method"><span id='set_range.v' class='invisible'><code>fn <a href='#method.set_range' class='fnname'>set_range</a>(&amp;mut self, range: <a class="struct" href="https://doc.rust-lang.org/nightly/core/ops/range/struct.Range.html" title="struct core::ops::range::Range">Range</a>&lt;<a class="primitive" href="https://doc.rust-lang.org/nightly/std/primitive.f32.html">f32</a>&gt;) -&gt; <a class="primitive" href="https://doc.rust-lang.org/nightly/std/primitive.reference.html">&amp;mut </a>Self</code></span><span class='out-of-band'><div class='ghost'></div><a class='srclink' href='../../../src/limn/widgets/slider.rs.html#109-112' title='goto source code'>[src]</a></span></h4>
+<h4 id='method.on_value_changed' class="method"><span id='on_value_changed.v' class='invisible'><code>fn <a href='#method.on_value_changed' class='fnname'>on_value_changed</a>&lt;F&gt;(&amp;mut self, on_value_changed: F) -&gt; <a class="primitive" href="https://doc.rust-lang.org/nightly/std/primitive.reference.html">&amp;mut </a>Self <span class="where fmt-newline">where<br>&nbsp;&nbsp;&nbsp;&nbsp;F: <a class="trait" href="https://doc.rust-lang.org/nightly/core/ops/function/trait.Fn.html" title="trait core::ops::function::Fn">Fn</a>(<a class="primitive" href="https://doc.rust-lang.org/nightly/std/primitive.f32.html">f32</a>, &amp;mut <a class="struct" href="../../../limn/event/struct.EventArgs.html" title="struct limn::event::EventArgs">EventArgs</a>) + 'static,&nbsp;</span></code></span><span class='out-of-band'><div class='ghost'></div><a class='srclink' href='../../../src/limn/widgets/slider.rs.html#113-120' title='goto source code'>[src]</a></span></h4>
+</div>
+                    <h2 id='deref-methods' class='small-section-header'>
+                      Methods from <a class="trait" href="https://doc.rust-lang.org/nightly/core/ops/deref/trait.Deref.html" title="trait core::ops::deref::Deref">Deref</a>&lt;Target = <a class="struct" href="../../../limn/widget/struct.WidgetBuilder.html" title="struct limn::widget::WidgetBuilder">WidgetBuilder</a>&gt;<a href='#deref-methods' class='anchor'></a>
+                    </h2>
+                <div class='impl-items'><h4 id='method.widget_ref' class="method"><span id='widget_ref.v' class='invisible'><code>fn <a href='#method.widget_ref' class='fnname'>widget_ref</a>(&amp;self) -&gt; <a class="struct" href="../../../limn/widget/struct.WidgetRef.html" title="struct limn::widget::WidgetRef">WidgetRef</a></code></span><span class='out-of-band'><div class='ghost'></div><a class='srclink' href='../../../src/limn/widget/mod.rs.html#443-445' title='goto source code'>[src]</a></span></h4>
+<div class='docblock'><p>Clones the current widget</p>
+</div><h4 id='method.id' class="method"><span id='id.v' class='invisible'><code>fn <a href='#method.id' class='fnname'>id</a>(&amp;self) -&gt; <a class="struct" href="../../../limn/resources/struct.WidgetId.html" title="struct limn::resources::WidgetId">WidgetId</a></code></span><span class='out-of-band'><div class='ghost'></div><a class='srclink' href='../../../src/limn/widget/mod.rs.html#448-450' title='goto source code'>[src]</a></span></h4>
+<div class='docblock'><p>Returns the ID of the current widget</p>
+</div><h4 id='method.set_draw_state' class="method"><span id='set_draw_state.v' class='invisible'><code>fn <a href='#method.set_draw_state' class='fnname'>set_draw_state</a>&lt;T:&nbsp;<a class="trait" href="../../../limn/widget/draw/trait.Draw.html" title="trait limn::widget::draw::Draw">Draw</a> + 'static&gt;(&amp;mut self, draw_state: T) -&gt; <a class="primitive" href="https://doc.rust-lang.org/nightly/std/primitive.reference.html">&amp;mut </a>Self</code></span><span class='out-of-band'><div class='ghost'></div><a class='srclink' href='../../../src/limn/widget/mod.rs.html#453-458' title='goto source code'>[src]</a></span></h4>
+<div class='docblock'><p>Applies a new <code>Draw</code>-State to the widget.</p>
+</div><h4 id='method.set_draw_state_with_style' class="method"><span id='set_draw_state_with_style.v' class='invisible'><code>fn <a href='#method.set_draw_state_with_style' class='fnname'>set_draw_state_with_style</a>&lt;T:&nbsp;<a class="trait" href="../../../limn/widget/draw/trait.Draw.html" title="trait limn::widget::draw::Draw">Draw</a> + 'static, S:&nbsp;<a class="trait" href="../../../limn/widget/style/trait.Style.html" title="trait limn::widget::style::Style">Style</a>&lt;T&gt; + 'static&gt;(<br>&nbsp;&nbsp;&nbsp;&nbsp;&amp;mut self, <br>&nbsp;&nbsp;&nbsp;&nbsp;draw_state: T, <br>&nbsp;&nbsp;&nbsp;&nbsp;style: S<br>) -&gt; <a class="primitive" href="https://doc.rust-lang.org/nightly/std/primitive.reference.html">&amp;mut </a>Self</code></span><span class='out-of-band'><div class='ghost'></div><a class='srclink' href='../../../src/limn/widget/mod.rs.html#461-466' title='goto source code'>[src]</a></span></h4>
+<div class='docblock'><p>Applies both a DrawState and a Style to the current widget</p>
+</div><h4 id='method.add_handler' class="method"><span id='add_handler.v' class='invisible'><code>fn <a href='#method.add_handler' class='fnname'>add_handler</a>&lt;E:&nbsp;'static, T:&nbsp;<a class="trait" href="../../../limn/event/trait.EventHandler.html" title="trait limn::event::EventHandler">EventHandler</a>&lt;E&gt; + 'static&gt;(<br>&nbsp;&nbsp;&nbsp;&nbsp;&amp;mut self, <br>&nbsp;&nbsp;&nbsp;&nbsp;handler: T<br>) -&gt; <a class="primitive" href="https://doc.rust-lang.org/nightly/std/primitive.reference.html">&amp;mut </a>Self</code></span><span class='out-of-band'><div class='ghost'></div><a class='srclink' href='../../../src/limn/widget/mod.rs.html#469-472' title='goto source code'>[src]</a></span></h4>
+<div class='docblock'><p>Adds a handler to the current widget</p>
+</div><h4 id='method.add_prop' class="method"><span id='add_prop.v' class='invisible'><code>fn <a href='#method.add_prop' class='fnname'>add_prop</a>(&amp;mut self, property: <a class="enum" href="../../../limn/widget/property/enum.Property.html" title="enum limn::widget::property::Property">Property</a>) -&gt; <a class="primitive" href="https://doc.rust-lang.org/nightly/std/primitive.reference.html">&amp;mut </a>Self</code></span><span class='out-of-band'><div class='ghost'></div><a class='srclink' href='../../../src/limn/widget/mod.rs.html#475-482' title='goto source code'>[src]</a></span></h4>
+<div class='docblock'><p>Recursively sets a certain property on the current widget</p>
+</div><h4 id='method.remove_prop' class="method"><span id='remove_prop.v' class='invisible'><code>fn <a href='#method.remove_prop' class='fnname'>remove_prop</a>(&amp;mut self, property: &amp;<a class="enum" href="../../../limn/widget/property/enum.Property.html" title="enum limn::widget::property::Property">Property</a>) -&gt; <a class="primitive" href="https://doc.rust-lang.org/nightly/std/primitive.reference.html">&amp;mut </a>Self</code></span><span class='out-of-band'><div class='ghost'></div><a class='srclink' href='../../../src/limn/widget/mod.rs.html#485-492' title='goto source code'>[src]</a></span></h4>
+<div class='docblock'><p>Recursively removes a certain property on the current widget</p>
+</div><h4 id='method.layout' class="method"><span id='layout.v' class='invisible'><code>fn <a href='#method.layout' class='fnname'>layout</a>(&amp;mut self) -&gt; <a class="struct" href="../../../limn/widget/struct.LayoutGuardMut.html" title="struct limn::widget::LayoutGuardMut">LayoutGuardMut</a></code></span><span class='out-of-band'><div class='ghost'></div><a class='srclink' href='../../../src/limn/widget/mod.rs.html#495-497' title='goto source code'>[src]</a></span></h4>
+<div class='docblock'><p>Performs the layout on the current widget</p>
+</div><h4 id='method.add_child' class="method"><span id='add_child.v' class='invisible'><code>fn <a href='#method.add_child' class='fnname'>add_child</a>&lt;U:&nbsp;<a class="trait" href="https://doc.rust-lang.org/nightly/core/convert/trait.Into.html" title="trait core::convert::Into">Into</a>&lt;<a class="struct" href="../../../limn/widget/struct.WidgetRef.html" title="struct limn::widget::WidgetRef">WidgetRef</a>&gt;&gt;(&amp;mut self, child: U) -&gt; <a class="primitive" href="https://doc.rust-lang.org/nightly/std/primitive.reference.html">&amp;mut </a>Self</code></span><span class='out-of-band'><div class='ghost'></div><a class='srclink' href='../../../src/limn/widget/mod.rs.html#501-504' title='goto source code'>[src]</a></span></h4>
+<div class='docblock'><p>Adds a child widget to the current Widget.
+Note that the child may be unconstrained.</p>
+</div><h4 id='method.set_name' class="method"><span id='set_name.v' class='invisible'><code>fn <a href='#method.set_name' class='fnname'>set_name</a>(&amp;mut self, name: &amp;<a class="primitive" href="https://doc.rust-lang.org/nightly/std/primitive.str.html">str</a>) -&gt; <a class="primitive" href="https://doc.rust-lang.org/nightly/std/primitive.reference.html">&amp;mut </a>Self</code></span><span class='out-of-band'><div class='ghost'></div><a class='srclink' href='../../../src/limn/widget/mod.rs.html#507-511' title='goto source code'>[src]</a></span></h4>
+<div class='docblock'><p>Sets the name of the WidgetBuilder</p>
+</div></div><div class='impl-items'><h4 id='method.linear_layout' class="method"><span id='linear_layout.v' class='invisible'><code>fn <a href='#method.linear_layout' class='fnname'>linear_layout</a>(&amp;mut self, settings: <a class="struct" href="../../../limn/prelude/struct.LinearLayoutSettings.html" title="struct limn::prelude::LinearLayoutSettings">LinearLayoutSettings</a>) -&gt; <a class="primitive" href="https://doc.rust-lang.org/nightly/std/primitive.reference.html">&amp;mut </a>Self</code></span><span class='out-of-band'><div class='ghost'></div><a class='srclink' href='../../../src/limn/layout.rs.html#20-24' title='goto source code'>[src]</a></span></h4>
+<div class='docblock'><p>Set this widgets container to be a <code>LinearLayout</code>.
+Children added to this widget will be arranged along one axis without overlapping.</p>
+</div><h4 id='method.grid' class="method"><span id='grid.v' class='invisible'><code>fn <a href='#method.grid' class='fnname'>grid</a>(&amp;mut self, num_columns: <a class="primitive" href="https://doc.rust-lang.org/nightly/std/primitive.usize.html">usize</a>) -&gt; <a class="primitive" href="https://doc.rust-lang.org/nightly/std/primitive.reference.html">&amp;mut </a>Self</code></span><span class='out-of-band'><div class='ghost'></div><a class='srclink' href='../../../src/limn/layout.rs.html#28-32' title='goto source code'>[src]</a></span></h4>
+<div class='docblock'><p>Set this widgets container to be a <code>GridLayout</code>.
+Children added to this widget will be arranged in a grid.</p>
+</div></div><div class='impl-items'><h4 id='method.on_click' class="method"><span id='on_click.v' class='invisible'><code>fn <a href='#method.on_click' class='fnname'>on_click</a>&lt;F&gt;(&amp;mut self, on_click: F) -&gt; <a class="primitive" href="https://doc.rust-lang.org/nightly/std/primitive.reference.html">&amp;mut </a>Self <span class="where fmt-newline">where<br>&nbsp;&nbsp;&nbsp;&nbsp;F: <a class="trait" href="https://doc.rust-lang.org/nightly/core/ops/function/trait.Fn.html" title="trait core::ops::function::Fn">Fn</a>(&amp;<a class="struct" href="../../../limn/input/mouse/struct.ClickEvent.html" title="struct limn::input::mouse::ClickEvent">ClickEvent</a>, &amp;mut <a class="struct" href="../../../limn/event/struct.EventArgs.html" title="struct limn::event::EventArgs">EventArgs</a>) + 'static,&nbsp;</span></code></span><span class='out-of-band'><div class='ghost'></div><a class='srclink' href='../../../src/limn/widgets/button.rs.html#191-198' title='goto source code'>[src]</a></span></h4>
+</div><div class='impl-items'><h4 id='method.make_draggable' class="method"><span id='make_draggable.v' class='invisible'><code>fn <a href='#method.make_draggable' class='fnname'>make_draggable</a>(&amp;mut self) -&gt; <a class="primitive" href="https://doc.rust-lang.org/nightly/std/primitive.reference.html">&amp;mut </a>Self</code></span><span class='out-of-band'><div class='ghost'></div><a class='srclink' href='../../../src/limn/widgets/drag.rs.html#87-95' title='goto source code'>[src]</a></span></h4>
+<div class='docblock'><p>Make a widget receive drag events.</p>
+</div></div><div class='impl-items'><h4 id='method.list_item' class="method"><span id='list_item.v' class='invisible'><code>fn <a href='#method.list_item' class='fnname'>list_item</a>(&amp;mut self, parent_list: &amp;<a class="struct" href="../../../limn/widget/struct.WidgetRef.html" title="struct limn::widget::WidgetRef">WidgetRef</a>) -&gt; <a class="primitive" href="https://doc.rust-lang.org/nightly/std/primitive.reference.html">&amp;mut </a>Self</code></span><span class='out-of-band'><div class='ghost'></div><a class='srclink' href='../../../src/limn/widgets/list.rs.html#143-145' title='goto source code'>[src]</a></span></h4>
+<h4 id='method.on_item_selected' class="method"><span id='on_item_selected.v' class='invisible'><code>fn <a href='#method.on_item_selected' class='fnname'>on_item_selected</a>&lt;F&gt;(&amp;mut self, on_item_selected: F) -&gt; <a class="primitive" href="https://doc.rust-lang.org/nightly/std/primitive.reference.html">&amp;mut </a>Self <span class="where fmt-newline">where<br>&nbsp;&nbsp;&nbsp;&nbsp;F: <a class="trait" href="https://doc.rust-lang.org/nightly/core/ops/function/trait.Fn.html" title="trait core::ops::function::Fn">Fn</a>(<a class="struct" href="../../../limn/event/struct.EventArgs.html" title="struct limn::event::EventArgs">EventArgs</a>) + 'static,&nbsp;</span></code></span><span class='out-of-band'><div class='ghost'></div><a class='srclink' href='../../../src/limn/widgets/list.rs.html#147-154' title='goto source code'>[src]</a></span></h4>
+</div><div class='impl-items'><h4 id='method.enable_hover' class="method"><span id='enable_hover.v' class='invisible'><code>fn <a href='#method.enable_hover' class='fnname'>enable_hover</a>(&amp;mut self) -&gt; <a class="primitive" href="https://doc.rust-lang.org/nightly/std/primitive.reference.html">&amp;mut </a>Self</code></span><span class='out-of-band'><div class='ghost'></div><a class='srclink' href='../../../src/limn/input/mouse.rs.html#125-132' title='goto source code'>[src]</a></span></h4>
+</div><div class='impl-items'><h4 id='method.make_focusable' class="method"><span id='make_focusable.v' class='invisible'><code>fn <a href='#method.make_focusable' class='fnname'>make_focusable</a>(&amp;mut self) -&gt; <a class="primitive" href="https://doc.rust-lang.org/nightly/std/primitive.reference.html">&amp;mut </a>Self</code></span><span class='out-of-band'><div class='ghost'></div><a class='srclink' href='../../../src/limn/input/keyboard.rs.html#116-120' title='goto source code'>[src]</a></span></h4>
+</div>
+            <h2 id='implementations' class='small-section-header'>
+              Trait Implementations<a href='#implementations' class='anchor'></a>
+            </h2>
+        <h3 id='impl-Debug' class='impl'><span class='in-band'><code>impl <a class="trait" href="https://doc.rust-lang.org/nightly/core/fmt/trait.Debug.html" title="trait core::fmt::Debug">Debug</a> for <a class="struct" href="../../../limn/widgets/slider/struct.SliderBuilder.html" title="struct limn::widgets::slider::SliderBuilder">SliderBuilder</a></code><a href='#impl-Debug' class='anchor'></a></span><span class='out-of-band'><div class='ghost'></div><a class='srclink' href='../../../src/limn/widgets/slider.rs.html#36' title='goto source code'>[src]</a></span></h3>
+<div class='impl-items'><h4 id='method.fmt' class="method"><span id='fmt.v' class='invisible'><code>fn <a href='https://doc.rust-lang.org/nightly/core/fmt/trait.Debug.html#tymethod.fmt' class='fnname'>fmt</a>(&amp;self, __arg_0: &amp;mut <a class="struct" href="https://doc.rust-lang.org/nightly/core/fmt/struct.Formatter.html" title="struct core::fmt::Formatter">Formatter</a>) -&gt; <a class="type" href="https://doc.rust-lang.org/nightly/core/fmt/type.Result.html" title="type core::fmt::Result">Result</a></code></span><span class='out-of-band'><div class='ghost'></div><a class='srclink' href='../../../src/limn/widgets/slider.rs.html#36' title='goto source code'>[src]</a></span></h4>
+<div class='docblock'><p>Formats the value using the given formatter.</p>
+</div></div><h3 id='impl-Default' class='impl'><span class='in-band'><code>impl <a class="trait" href="https://doc.rust-lang.org/nightly/core/default/trait.Default.html" title="trait core::default::Default">Default</a> for <a class="struct" href="../../../limn/widgets/slider/struct.SliderBuilder.html" title="struct limn::widgets::slider::SliderBuilder">SliderBuilder</a></code><a href='#impl-Default' class='anchor'></a></span><span class='out-of-band'><div class='ghost'></div><a class='srclink' href='../../../src/limn/widgets/slider.rs.html#53-75' title='goto source code'>[src]</a></span></h3>
+<div class='impl-items'><h4 id='method.default' class="method"><span id='default.v' class='invisible'><code>fn <a href='https://doc.rust-lang.org/nightly/core/default/trait.Default.html#tymethod.default' class='fnname'>default</a>() -&gt; Self</code></span><span class='out-of-band'><div class='ghost'></div><a class='srclink' href='../../../src/limn/widgets/slider.rs.html#55-74' title='goto source code'>[src]</a></span></h4>
+<div class='docblock'><p>Returns the &quot;default value&quot; for a type. <a href="https://doc.rust-lang.org/nightly/core/default/trait.Default.html#tymethod.default">Read more</a></p>
+</div></div><h3 id='impl-AsWidgetRef' class='impl'><span class='in-band'><code>impl <a class="trait" href="../../../limn/widget/trait.AsWidgetRef.html" title="trait limn::widget::AsWidgetRef">AsWidgetRef</a> for <a class="struct" href="../../../limn/widgets/slider/struct.SliderBuilder.html" title="struct limn::widgets::slider::SliderBuilder">SliderBuilder</a></code><a href='#impl-AsWidgetRef' class='anchor'></a></span><span class='out-of-band'><div class='ghost'></div><a class='srclink' href='../../../src/limn/widget/mod.rs.html#552-556' title='goto source code'>[src]</a></span></h3>
+<div class='impl-items'><h4 id='method.widget_ref-1' class="method"><span id='widget_ref.v-1' class='invisible'><code>fn <a href='../../../limn/widget/trait.AsWidgetRef.html#tymethod.widget_ref' class='fnname'>widget_ref</a>(&amp;self) -&gt; <a class="struct" href="../../../limn/widget/struct.WidgetRef.html" title="struct limn::widget::WidgetRef">WidgetRef</a></code></span><span class='out-of-band'><div class='ghost'></div><a class='srclink' href='../../../src/limn/widget/mod.rs.html#553-555' title='goto source code'>[src]</a></span></h4>
+</div><h3 id='impl-Into&lt;WidgetRef&gt;' class='impl'><span class='in-band'><code>impl <a class="trait" href="https://doc.rust-lang.org/nightly/core/convert/trait.Into.html" title="trait core::convert::Into">Into</a>&lt;<a class="struct" href="../../../limn/widget/struct.WidgetRef.html" title="struct limn::widget::WidgetRef">WidgetRef</a>&gt; for <a class="struct" href="../../../limn/widgets/slider/struct.SliderBuilder.html" title="struct limn::widgets::slider::SliderBuilder">SliderBuilder</a></code><a href='#impl-Into&lt;WidgetRef&gt;' class='anchor'></a></span><span class='out-of-band'><div class='ghost'></div><a class='srclink' href='../../../src/limn/widget/mod.rs.html#557-562' title='goto source code'>[src]</a></span></h3>
+<div class='impl-items'><h4 id='method.into' class="method"><span id='into.v' class='invisible'><code>fn <a href='https://doc.rust-lang.org/nightly/core/convert/trait.Into.html#tymethod.into' class='fnname'>into</a>(self) -&gt; <a class="struct" href="../../../limn/widget/struct.WidgetRef.html" title="struct limn::widget::WidgetRef">WidgetRef</a></code></span><span class='out-of-band'><div class='ghost'></div><a class='srclink' href='../../../src/limn/widget/mod.rs.html#558-561' title='goto source code'>[src]</a></span></h4>
+<div class='docblock'><p>Performs the conversion.</p>
+</div></div><h3 id='impl-Deref' class='impl'><span class='in-band'><code>impl <a class="trait" href="https://doc.rust-lang.org/nightly/core/ops/deref/trait.Deref.html" title="trait core::ops::deref::Deref">Deref</a> for <a class="struct" href="../../../limn/widgets/slider/struct.SliderBuilder.html" title="struct limn::widgets::slider::SliderBuilder">SliderBuilder</a></code><a href='#impl-Deref' class='anchor'></a></span><span class='out-of-band'><div class='ghost'></div><a class='srclink' href='../../../src/limn/widget/mod.rs.html#563-568' title='goto source code'>[src]</a></span></h3>
+<div class='impl-items'><h4 id='associatedtype.Target' class="type"><span id='Target.t' class='invisible'><code>type <a href='https://doc.rust-lang.org/nightly/core/ops/deref/trait.Deref.html#associatedtype.Target' class="type">Target</a> = <a class="struct" href="../../../limn/widget/struct.WidgetBuilder.html" title="struct limn::widget::WidgetBuilder">WidgetBuilder</a></code></span></h4>
+<div class='docblock'><p>The resulting type after dereferencing.</p>
+</div><h4 id='method.deref' class="method"><span id='deref.v' class='invisible'><code>fn <a href='https://doc.rust-lang.org/nightly/core/ops/deref/trait.Deref.html#tymethod.deref' class='fnname'>deref</a>(&amp;self) -&gt; &amp;<a class="struct" href="../../../limn/widget/struct.WidgetBuilder.html" title="struct limn::widget::WidgetBuilder">WidgetBuilder</a></code></span><span class='out-of-band'><div class='ghost'></div><a class='srclink' href='../../../src/limn/widget/mod.rs.html#565-567' title='goto source code'>[src]</a></span></h4>
+<div class='docblock'><p>Dereferences the value.</p>
+</div></div><h3 id='impl-DerefMut' class='impl'><span class='in-band'><code>impl <a class="trait" href="https://doc.rust-lang.org/nightly/core/ops/deref/trait.DerefMut.html" title="trait core::ops::deref::DerefMut">DerefMut</a> for <a class="struct" href="../../../limn/widgets/slider/struct.SliderBuilder.html" title="struct limn::widgets::slider::SliderBuilder">SliderBuilder</a></code><a href='#impl-DerefMut' class='anchor'></a></span><span class='out-of-band'><div class='ghost'></div><a class='srclink' href='../../../src/limn/widget/mod.rs.html#569-573' title='goto source code'>[src]</a></span></h3>
+<div class='impl-items'><h4 id='method.deref_mut' class="method"><span id='deref_mut.v' class='invisible'><code>fn <a href='https://doc.rust-lang.org/nightly/core/ops/deref/trait.DerefMut.html#tymethod.deref_mut' class='fnname'>deref_mut</a>(&amp;mut self) -&gt; &amp;mut <a class="struct" href="../../../limn/widget/struct.WidgetBuilder.html" title="struct limn::widget::WidgetBuilder">WidgetBuilder</a></code></span><span class='out-of-band'><div class='ghost'></div><a class='srclink' href='../../../src/limn/widget/mod.rs.html#570-572' title='goto source code'>[src]</a></span></h4>
+<div class='docblock'><p>Mutably dereferences the value.</p>
+</div></div><h3 id='impl-LayoutRef' class='impl'><span class='in-band'><code>impl <a class="trait" href="../../../limn_layout/trait.LayoutRef.html" title="trait limn_layout::LayoutRef">LayoutRef</a> for <a class="struct" href="../../../limn/widgets/slider/struct.SliderBuilder.html" title="struct limn::widgets::slider::SliderBuilder">SliderBuilder</a></code><a href='#impl-LayoutRef' class='anchor'></a></span><span class='out-of-band'><div class='ghost'></div><a class='srclink' href='../../../src/limn/widget/mod.rs.html#574-578' title='goto source code'>[src]</a></span></h3>
+<div class='impl-items'><h4 id='method.layout_ref' class="method"><span id='layout_ref.v' class='invisible'><code>fn <a href='../../../limn_layout/trait.LayoutRef.html#tymethod.layout_ref' class='fnname'>layout_ref</a>(&amp;self) -&gt; <a class="struct" href="../../../limn_layout/struct.LayoutVars.html" title="struct limn_layout::LayoutVars">LayoutVars</a></code></span><span class='out-of-band'><div class='ghost'></div><a class='srclink' href='../../../src/limn/widget/mod.rs.html#575-577' title='goto source code'>[src]</a></span></h4>
+</div><h3 id='impl-Into&lt;WidgetBuilder&gt;' class='impl'><span class='in-band'><code>impl <a class="trait" href="https://doc.rust-lang.org/nightly/core/convert/trait.Into.html" title="trait core::convert::Into">Into</a>&lt;<a class="struct" href="../../../limn/widget/struct.WidgetBuilder.html" title="struct limn::widget::WidgetBuilder">WidgetBuilder</a>&gt; for <a class="struct" href="../../../limn/widgets/slider/struct.SliderBuilder.html" title="struct limn::widgets::slider::SliderBuilder">SliderBuilder</a></code><a href='#impl-Into&lt;WidgetBuilder&gt;' class='anchor'></a></span><span class='out-of-band'><div class='ghost'></div><a class='srclink' href='../../../src/limn/widgets/slider.rs.html#124-251' title='goto source code'>[src]</a></span></h3>
+<div class='impl-items'><h4 id='method.into-1' class="method"><span id='into.v-1' class='invisible'><code>fn <a href='https://doc.rust-lang.org/nightly/core/convert/trait.Into.html#tymethod.into' class='fnname'>into</a>(self) -&gt; <a class="struct" href="../../../limn/widget/struct.WidgetBuilder.html" title="struct limn::widget::WidgetBuilder">WidgetBuilder</a></code></span><span class='out-of-band'><div class='ghost'></div><a class='srclink' href='../../../src/limn/widgets/slider.rs.html#125-250' title='goto source code'>[src]</a></span></h4>
+<div class='docblock'><p>Performs the conversion.</p>
+</div></div></section>
+    <section id='search' class="content hidden"></section>
+
+    <section class="footer"></section>
+
+    <aside id="help" class="hidden">
+        <div>
+            <h1 class="hidden">Help</h1>
+
+            <div class="shortcuts">
+                <h2>Keyboard Shortcuts</h2>
+
+                <dl>
+                    <dt>?</dt>
+                    <dd>Show this help dialog</dd>
+                    <dt>S</dt>
+                    <dd>Focus the search field</dd>
+                    <dt>&larrb;</dt>
+                    <dd>Move up in search results</dd>
+                    <dt>&rarrb;</dt>
+                    <dd>Move down in search results</dd>
+                    <dt>&#9166;</dt>
+                    <dd>Go to active search result</dd>
+                    <dt>+</dt>
+                    <dd>Collapse/expand all sections</dd>
+                </dl>
+            </div>
+
+            <div class="infos">
+                <h2>Search Tricks</h2>
+
+                <p>
+                    Prefix searches with a type followed by a colon (e.g.
+                    <code>fn:</code>) to restrict the search to a given type.
+                </p>
+
+                <p>
+                    Accepted types are: <code>fn</code>, <code>mod</code>,
+                    <code>struct</code>, <code>enum</code>,
+                    <code>trait</code>, <code>type</code>, <code>macro</code>,
+                    and <code>const</code>.
+                </p>
+
+                <p>
+                    Search functions by type signature (e.g.
+                    <code>vec -> usize</code> or <code>* -> vec</code>)
+                </p>
+            </div>
+        </div>
+    </aside>
+
+    
+
+    <script>
+        window.rootPath = "../../../";
+        window.currentCrate = "limn";
+    </script>
+    <script src="../../../main.js"></script>
+    <script defer src="../../../search-index.js"></script>
+</body>
+</html>

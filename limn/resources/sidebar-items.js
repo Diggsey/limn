@@ -1,0 +1,1 @@
+initSidebarItems({"fn":[["init_resources",""],["load_font",""],["premultiply",""],["resources",""]],"mod":[["id",""]],"struct":[["FontInfo",""],["ImageInfo",""],["Map","Map for a given `Id` and resource type."],["Resources",""],["WidgetId",""]],"type":[["Font",""]]});

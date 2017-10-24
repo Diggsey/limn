@@ -1,0 +1,1 @@
+initSidebarItems({"enum":[["Value",""]],"fn":[["apply_style",""],["update",""]],"struct":[["Selector",""],["StyleUpdated",""]],"trait":[["Style",""]]});

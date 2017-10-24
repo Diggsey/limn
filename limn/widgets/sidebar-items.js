@@ -1,0 +1,1 @@
+initSidebarItems({"mod":[["button",""],["drag",""],["edit_text",""],["glcanvas",""],["image",""],["list",""],["scroll",""],["slider",""],["text",""]]});

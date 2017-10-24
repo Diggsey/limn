@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="generator" content="rustdoc">
+    <meta name="description" content="API documentation for the Rust `WidgetRef` struct in crate `limn`.">
+    <meta name="keywords" content="rust, rustlang, rust-lang, WidgetRef">
+
+    <title>limn::widget::WidgetRef - Rust</title>
+
+    <link rel="stylesheet" type="text/css" href="../../normalize.css">
+    <link rel="stylesheet" type="text/css" href="../../rustdoc.css">
+    <link rel="stylesheet" type="text/css" href="../../main.css">
+    
+
+    
+    
+</head>
+<body class="rustdoc struct">
+    <!--[if lte IE 8]>
+    <div class="warning">
+        This old browser is unsupported and will most likely display funky
+        things.
+    </div>
+    <![endif]-->
+
+    
+
+    <nav class="sidebar">
+        
+        <p class='location'>Struct WidgetRef</p><div class="block items"><ul><li><a href="#methods">Methods</a></li><li><a href="#implementations">Trait Implementations</a></li></ul></div><p class='location'><a href='../index.html'>limn</a>::<wbr><a href='index.html'>widget</a></p><script>window.sidebarCurrent = {name: 'WidgetRef', ty: 'struct', relpath: ''};</script><script defer src="sidebar-items.js"></script>
+    </nav>
+
+    <nav class="sub">
+        <form class="search-form js-only">
+            <div class="search-container">
+                <input class="search-input" name="search"
+                       autocomplete="off"
+                       placeholder="Click or press ‘S’ to search, ‘?’ for more options…"
+                       type="search">
+            </div>
+        </form>
+    </nav>
+
+    <section id='main' class="content">
+<h1 class='fqn'><span class='in-band'>Struct <a href='../index.html'>limn</a>::<wbr><a href='index.html'>widget</a>::<wbr><a class="struct" href=''>WidgetRef</a></span><span class='out-of-band'><span id='render-detail'>
+                   <a id="toggle-all-docs" href="javascript:void(0)" title="collapse all docs">
+                       [<span class='inner'>&#x2212;</span>]
+                   </a>
+               </span><a class='srclink' href='../../src/limn/widget/mod.rs.html#51' title='goto source code'>[src]</a></span></h1>
+<pre class='rust struct'>pub struct WidgetRef(pub <a class="struct" href="https://doc.rust-lang.org/nightly/alloc/rc/struct.Rc.html" title="struct alloc::rc::Rc">Rc</a>&lt;<a class="struct" href="https://doc.rust-lang.org/nightly/core/cell/struct.RefCell.html" title="struct core::cell::RefCell">RefCell</a>&lt;<a class="struct" href="../../limn/widget/struct.Widget.html" title="struct limn::widget::Widget">Widget</a>&gt;&gt;);</pre>
+                    <h2 id='methods' class='small-section-header'>
+                      Methods<a href='#methods' class='anchor'></a>
+                    </h2>
+                <h3 id='impl' class='impl'><span class='in-band'><code>impl <a class="struct" href="../../limn/widget/struct.WidgetRef.html" title="struct limn::widget::WidgetRef">WidgetRef</a></code><a href='#impl' class='anchor'></a></span><span class='out-of-band'><div class='ghost'></div><a class='srclink' href='../../src/limn/widget/mod.rs.html#53-236' title='goto source code'>[src]</a></span></h3>
+<div class='impl-items'><h4 id='method.widget_mut' class="method"><span id='widget_mut.v' class='invisible'><code>fn <a href='#method.widget_mut' class='fnname'>widget_mut</a>(&amp;self) -&gt; <a class="struct" href="https://doc.rust-lang.org/nightly/core/cell/struct.RefMut.html" title="struct core::cell::RefMut">RefMut</a>&lt;<a class="struct" href="../../limn/widget/struct.Widget.html" title="struct limn::widget::Widget">Widget</a>&gt;</code></span><span class='out-of-band'><div class='ghost'></div><a class='srclink' href='../../src/limn/widget/mod.rs.html#59-61' title='goto source code'>[src]</a></span></h4>
+<h4 id='method.widget' class="method"><span id='widget.v' class='invisible'><code>fn <a href='#method.widget' class='fnname'>widget</a>(&amp;self) -&gt; <a class="struct" href="https://doc.rust-lang.org/nightly/core/cell/struct.Ref.html" title="struct core::cell::Ref">Ref</a>&lt;<a class="struct" href="../../limn/widget/struct.Widget.html" title="struct limn::widget::Widget">Widget</a>&gt;</code></span><span class='out-of-band'><div class='ghost'></div><a class='srclink' href='../../src/limn/widget/mod.rs.html#62-64' title='goto source code'>[src]</a></span></h4>
+<h4 id='method.add_handler' class="method"><span id='add_handler.v' class='invisible'><code>fn <a href='#method.add_handler' class='fnname'>add_handler</a>&lt;E:&nbsp;'static, T:&nbsp;<a class="trait" href="../../limn/event/trait.EventHandler.html" title="trait limn::event::EventHandler">EventHandler</a>&lt;E&gt; + 'static&gt;(<br>&nbsp;&nbsp;&nbsp;&nbsp;&amp;mut self, <br>&nbsp;&nbsp;&nbsp;&nbsp;handler: T<br>) -&gt; <a class="primitive" href="https://doc.rust-lang.org/nightly/std/primitive.reference.html">&amp;mut </a>Self</code></span><span class='out-of-band'><div class='ghost'></div><a class='srclink' href='../../src/limn/widget/mod.rs.html#65-67' title='goto source code'>[src]</a></span></h4>
+<h4 id='method.add_handler_fn' class="method"><span id='add_handler_fn.v' class='invisible'><code>fn <a href='#method.add_handler_fn' class='fnname'>add_handler_fn</a>&lt;E:&nbsp;'static, T:&nbsp;<a class="trait" href="https://doc.rust-lang.org/nightly/core/ops/function/trait.FnMut.html" title="trait core::ops::function::FnMut">FnMut</a>(<a class="primitive" href="https://doc.rust-lang.org/nightly/std/primitive.reference.html">&amp;</a>E, <a class="struct" href="../../limn/event/struct.EventArgs.html" title="struct limn::event::EventArgs">EventArgs</a>) + 'static&gt;(<br>&nbsp;&nbsp;&nbsp;&nbsp;&amp;mut self, <br>&nbsp;&nbsp;&nbsp;&nbsp;handler: T<br>) -&gt; <a class="primitive" href="https://doc.rust-lang.org/nightly/std/primitive.reference.html">&amp;mut </a>Self</code></span><span class='out-of-band'><div class='ghost'></div><a class='srclink' href='../../src/limn/widget/mod.rs.html#68-70' title='goto source code'>[src]</a></span></h4>
+<h4 id='method.layout' class="method"><span id='layout.v' class='invisible'><code>fn <a href='#method.layout' class='fnname'>layout</a>(&amp;mut self) -&gt; <a class="struct" href="../../limn/widget/struct.LayoutGuard.html" title="struct limn::widget::LayoutGuard">LayoutGuard</a></code></span><span class='out-of-band'><div class='ghost'></div><a class='srclink' href='../../src/limn/widget/mod.rs.html#76-78' title='goto source code'>[src]</a></span></h4>
+<h4 id='method.layout_vars' class="method"><span id='layout_vars.v' class='invisible'><code>fn <a href='#method.layout_vars' class='fnname'>layout_vars</a>(&amp;self) -&gt; <a class="struct" href="../../limn_layout/struct.LayoutVars.html" title="struct limn_layout::LayoutVars">LayoutVars</a></code></span><span class='out-of-band'><div class='ghost'></div><a class='srclink' href='../../src/limn/widget/mod.rs.html#79-81' title='goto source code'>[src]</a></span></h4>
+<h4 id='method.props' class="method"><span id='props.v' class='invisible'><code>fn <a href='#method.props' class='fnname'>props</a>(&amp;self) -&gt; <a class="struct" href="../../limn/widget/struct.PropsGuard.html" title="struct limn::widget::PropsGuard">PropsGuard</a></code></span><span class='out-of-band'><div class='ghost'></div><a class='srclink' href='../../src/limn/widget/mod.rs.html#82-84' title='goto source code'>[src]</a></span></h4>
+<h4 id='method.add_prop' class="method"><span id='add_prop.v' class='invisible'><code>fn <a href='#method.add_prop' class='fnname'>add_prop</a>(&amp;mut self, property: <a class="enum" href="../../limn/widget/property/enum.Property.html" title="enum limn::widget::property::Property">Property</a>)</code></span><span class='out-of-band'><div class='ghost'></div><a class='srclink' href='../../src/limn/widget/mod.rs.html#85-91' title='goto source code'>[src]</a></span></h4>
+<h4 id='method.remove_prop' class="method"><span id='remove_prop.v' class='invisible'><code>fn <a href='#method.remove_prop' class='fnname'>remove_prop</a>(&amp;mut self, property: <a class="enum" href="../../limn/widget/property/enum.Property.html" title="enum limn::widget::property::Property">Property</a>)</code></span><span class='out-of-band'><div class='ghost'></div><a class='srclink' href='../../src/limn/widget/mod.rs.html#92-98' title='goto source code'>[src]</a></span></h4>
+<h4 id='method.draw_state' class="method"><span id='draw_state.v' class='invisible'><code>fn <a href='#method.draw_state' class='fnname'>draw_state</a>(&amp;mut self) -&gt; <a class="struct" href="../../limn/widget/struct.DrawStateGuard.html" title="struct limn::widget::DrawStateGuard">DrawStateGuard</a></code></span><span class='out-of-band'><div class='ghost'></div><a class='srclink' href='../../src/limn/widget/mod.rs.html#99-101' title='goto source code'>[src]</a></span></h4>
+<h4 id='method.downgrade' class="method"><span id='downgrade.v' class='invisible'><code>fn <a href='#method.downgrade' class='fnname'>downgrade</a>(&amp;self) -&gt; <a class="struct" href="../../limn/widget/struct.WidgetWeak.html" title="struct limn::widget::WidgetWeak">WidgetWeak</a></code></span><span class='out-of-band'><div class='ghost'></div><a class='srclink' href='../../src/limn/widget/mod.rs.html#102-104' title='goto source code'>[src]</a></span></h4>
+<h4 id='method.id' class="method"><span id='id.v' class='invisible'><code>fn <a href='#method.id' class='fnname'>id</a>(&amp;self) -&gt; <a class="struct" href="../../limn/resources/struct.WidgetId.html" title="struct limn::resources::WidgetId">WidgetId</a></code></span><span class='out-of-band'><div class='ghost'></div><a class='srclink' href='../../src/limn/widget/mod.rs.html#105-107' title='goto source code'>[src]</a></span></h4>
+<h4 id='method.set_name' class="method"><span id='set_name.v' class='invisible'><code>fn <a href='#method.set_name' class='fnname'>set_name</a>(&amp;mut self, name: &amp;<a class="primitive" href="https://doc.rust-lang.org/nightly/std/primitive.str.html">str</a>) -&gt; <a class="primitive" href="https://doc.rust-lang.org/nightly/std/primitive.reference.html">&amp;mut </a>Self</code></span><span class='out-of-band'><div class='ghost'></div><a class='srclink' href='../../src/limn/widget/mod.rs.html#108-113' title='goto source code'>[src]</a></span></h4>
+<h4 id='method.set_debug_color' class="method"><span id='set_debug_color.v' class='invisible'><code>fn <a href='#method.set_debug_color' class='fnname'>set_debug_color</a>(&amp;mut self, color: <a class="struct" href="../../limn/color/struct.Color.html" title="struct limn::color::Color">Color</a>) -&gt; <a class="primitive" href="https://doc.rust-lang.org/nightly/std/primitive.reference.html">&amp;mut </a>Self</code></span><span class='out-of-band'><div class='ghost'></div><a class='srclink' href='../../src/limn/widget/mod.rs.html#114-117' title='goto source code'>[src]</a></span></h4>
+<h4 id='method.name' class="method"><span id='name.v' class='invisible'><code>fn <a href='#method.name' class='fnname'>name</a>(&amp;self) -&gt; <a class="struct" href="https://doc.rust-lang.org/nightly/alloc/string/struct.String.html" title="struct alloc::string::String">String</a></code></span><span class='out-of-band'><div class='ghost'></div><a class='srclink' href='../../src/limn/widget/mod.rs.html#118-120' title='goto source code'>[src]</a></span></h4>
+<h4 id='method.debug_color' class="method"><span id='debug_color.v' class='invisible'><code>fn <a href='#method.debug_color' class='fnname'>debug_color</a>(&amp;self) -&gt; <a class="enum" href="https://doc.rust-lang.org/nightly/core/option/enum.Option.html" title="enum core::option::Option">Option</a>&lt;<a class="struct" href="../../limn/color/struct.Color.html" title="struct limn::color::Color">Color</a>&gt;</code></span><span class='out-of-band'><div class='ghost'></div><a class='srclink' href='../../src/limn/widget/mod.rs.html#121-123' title='goto source code'>[src]</a></span></h4>
+<h4 id='method.has_updated' class="method"><span id='has_updated.v' class='invisible'><code>fn <a href='#method.has_updated' class='fnname'>has_updated</a>(&amp;self) -&gt; <a class="primitive" href="https://doc.rust-lang.org/nightly/std/primitive.bool.html">bool</a></code></span><span class='out-of-band'><div class='ghost'></div><a class='srclink' href='../../src/limn/widget/mod.rs.html#124-126' title='goto source code'>[src]</a></span></h4>
+<h4 id='method.set_updated' class="method"><span id='set_updated.v' class='invisible'><code>fn <a href='#method.set_updated' class='fnname'>set_updated</a>(&amp;self, has_updated: <a class="primitive" href="https://doc.rust-lang.org/nightly/std/primitive.bool.html">bool</a>)</code></span><span class='out-of-band'><div class='ghost'></div><a class='srclink' href='../../src/limn/widget/mod.rs.html#127-129' title='goto source code'>[src]</a></span></h4>
+<h4 id='method.bounds' class="method"><span id='bounds.v' class='invisible'><code>fn <a href='#method.bounds' class='fnname'>bounds</a>(&amp;self) -&gt; <a class="type" href="../../limn/geometry/type.Rect.html" title="type limn::geometry::Rect">Rect</a></code></span><span class='out-of-band'><div class='ghost'></div><a class='srclink' href='../../src/limn/widget/mod.rs.html#130-132' title='goto source code'>[src]</a></span></h4>
+<h4 id='method.update' class="method"><span id='update.v' class='invisible'><code>fn <a href='#method.update' class='fnname'>update</a>&lt;F, T:&nbsp;<a class="trait" href="../../limn/widget/draw/trait.Draw.html" title="trait limn::widget::draw::Draw">Draw</a> + 'static&gt;(&amp;mut self, f: F) <span class="where fmt-newline">where<br>&nbsp;&nbsp;&nbsp;&nbsp;F: <a class="trait" href="https://doc.rust-lang.org/nightly/core/ops/function/trait.FnOnce.html" title="trait core::ops::function::FnOnce">FnOnce</a>(<a class="primitive" href="https://doc.rust-lang.org/nightly/std/primitive.reference.html">&amp;mut </a>T),&nbsp;</span></code></span><span class='out-of-band'><div class='ghost'></div><a class='srclink' href='../../src/limn/widget/mod.rs.html#134-139' title='goto source code'>[src]</a></span></h4>
+<h4 id='method.update_layout' class="method"><span id='update_layout.v' class='invisible'><code>fn <a href='#method.update_layout' class='fnname'>update_layout</a>&lt;F&gt;(&amp;self, f: F) <span class="where fmt-newline">where<br>&nbsp;&nbsp;&nbsp;&nbsp;F: <a class="trait" href="https://doc.rust-lang.org/nightly/core/ops/function/trait.FnOnce.html" title="trait core::ops::function::FnOnce">FnOnce</a>(&amp;mut <a class="struct" href="../../limn_layout/struct.Layout.html" title="struct limn_layout::Layout">Layout</a>),&nbsp;</span></code></span><span class='out-of-band'><div class='ghost'></div><a class='srclink' href='../../src/limn/widget/mod.rs.html#140-146' title='goto source code'>[src]</a></span></h4>
+<h4 id='method.apply_style' class="method"><span id='apply_style.v' class='invisible'><code>fn <a href='#method.apply_style' class='fnname'>apply_style</a>(&amp;mut self)</code></span><span class='out-of-band'><div class='ghost'></div><a class='srclink' href='../../src/limn/widget/mod.rs.html#148-152' title='goto source code'>[src]</a></span></h4>
+<h4 id='method.add_child' class="method"><span id='add_child.v' class='invisible'><code>fn <a href='#method.add_child' class='fnname'>add_child</a>&lt;U:&nbsp;<a class="trait" href="https://doc.rust-lang.org/nightly/core/convert/trait.Into.html" title="trait core::convert::Into">Into</a>&lt;<a class="struct" href="../../limn/widget/struct.WidgetRef.html" title="struct limn::widget::WidgetRef">WidgetRef</a>&gt;&gt;(&amp;mut self, child: U) -&gt; <a class="primitive" href="https://doc.rust-lang.org/nightly/std/primitive.reference.html">&amp;mut </a>Self</code></span><span class='out-of-band'><div class='ghost'></div><a class='srclink' href='../../src/limn/widget/mod.rs.html#154-170' title='goto source code'>[src]</a></span></h4>
+<h4 id='method.remove_child' class="method"><span id='remove_child.v' class='invisible'><code>fn <a href='#method.remove_child' class='fnname'>remove_child</a>(&amp;mut self, child_ref: <a class="struct" href="../../limn/widget/struct.WidgetRef.html" title="struct limn::widget::WidgetRef">WidgetRef</a>)</code></span><span class='out-of-band'><div class='ghost'></div><a class='srclink' href='../../src/limn/widget/mod.rs.html#172-186' title='goto source code'>[src]</a></span></h4>
+<h4 id='method.remove_widget' class="method"><span id='remove_widget.v' class='invisible'><code>fn <a href='#method.remove_widget' class='fnname'>remove_widget</a>(&amp;mut self)</code></span><span class='out-of-band'><div class='ghost'></div><a class='srclink' href='../../src/limn/widget/mod.rs.html#188-192' title='goto source code'>[src]</a></span></h4>
+<h4 id='method.parent' class="method"><span id='parent.v' class='invisible'><code>fn <a href='#method.parent' class='fnname'>parent</a>(&amp;self) -&gt; <a class="enum" href="https://doc.rust-lang.org/nightly/core/option/enum.Option.html" title="enum core::option::Option">Option</a>&lt;<a class="struct" href="../../limn/widget/struct.WidgetRef.html" title="struct limn::widget::WidgetRef">WidgetRef</a>&gt;</code></span><span class='out-of-band'><div class='ghost'></div><a class='srclink' href='../../src/limn/widget/mod.rs.html#194-196' title='goto source code'>[src]</a></span></h4>
+<h4 id='method.children' class="method"><span id='children.v' class='invisible'><code>fn <a href='#method.children' class='fnname'>children</a>(&amp;self) -&gt; <a class="struct" href="https://doc.rust-lang.org/nightly/alloc/vec/struct.Vec.html" title="struct alloc::vec::Vec">Vec</a>&lt;<a class="struct" href="../../limn/widget/struct.WidgetRef.html" title="struct limn::widget::WidgetRef">WidgetRef</a>&gt;</code></span><span class='out-of-band'><div class='ghost'></div><a class='srclink' href='../../src/limn/widget/mod.rs.html#198-200' title='goto source code'>[src]</a></span></h4>
+<h4 id='method.event' class="method"><span id='event.v' class='invisible'><code>fn <a href='#method.event' class='fnname'>event</a>&lt;T:&nbsp;'static&gt;(&amp;self, data: T)</code></span><span class='out-of-band'><div class='ghost'></div><a class='srclink' href='../../src/limn/widget/mod.rs.html#202-204' title='goto source code'>[src]</a></span></h4>
+<h4 id='method.event_subtree' class="method"><span id='event_subtree.v' class='invisible'><code>fn <a href='#method.event_subtree' class='fnname'>event_subtree</a>&lt;T:&nbsp;'static&gt;(&amp;self, data: T)</code></span><span class='out-of-band'><div class='ghost'></div><a class='srclink' href='../../src/limn/widget/mod.rs.html#205-207' title='goto source code'>[src]</a></span></h4>
+<h4 id='method.event_bubble_up' class="method"><span id='event_bubble_up.v' class='invisible'><code>fn <a href='#method.event_bubble_up' class='fnname'>event_bubble_up</a>&lt;T:&nbsp;'static&gt;(&amp;self, data: T)</code></span><span class='out-of-band'><div class='ghost'></div><a class='srclink' href='../../src/limn/widget/mod.rs.html#208-210' title='goto source code'>[src]</a></span></h4>
+<h4 id='method.trigger_event' class="method"><span id='trigger_event.v' class='invisible'><code>fn <a href='#method.trigger_event' class='fnname'>trigger_event</a>(&amp;self, ui: &amp;mut <a class="struct" href="../../limn/ui/struct.Ui.html" title="struct limn::ui::Ui">Ui</a>, type_id: <a class="struct" href="https://doc.rust-lang.org/nightly/core/any/struct.TypeId.html" title="struct core::any::TypeId">TypeId</a>, event: &amp;<a class="trait" href="https://doc.rust-lang.org/nightly/core/any/trait.Any.html" title="trait core::any::Any">Any</a>) -&gt; <a class="primitive" href="https://doc.rust-lang.org/nightly/std/primitive.bool.html">bool</a></code></span><span class='out-of-band'><div class='ghost'></div><a class='srclink' href='../../src/limn/widget/mod.rs.html#211-235' title='goto source code'>[src]</a></span></h4>
+</div>
+            <h2 id='implementations' class='small-section-header'>
+              Trait Implementations<a href='#implementations' class='anchor'></a>
+            </h2>
+        <h3 id='impl-Clone' class='impl'><span class='in-band'><code>impl <a class="trait" href="https://doc.rust-lang.org/nightly/core/clone/trait.Clone.html" title="trait core::clone::Clone">Clone</a> for <a class="struct" href="../../limn/widget/struct.WidgetRef.html" title="struct limn::widget::WidgetRef">WidgetRef</a></code><a href='#impl-Clone' class='anchor'></a></span><span class='out-of-band'><div class='ghost'></div><a class='srclink' href='../../src/limn/widget/mod.rs.html#50' title='goto source code'>[src]</a></span></h3>
+<div class='impl-items'><h4 id='method.clone' class="method"><span id='clone.v' class='invisible'><code>fn <a href='https://doc.rust-lang.org/nightly/core/clone/trait.Clone.html#tymethod.clone' class='fnname'>clone</a>(&amp;self) -&gt; <a class="struct" href="../../limn/widget/struct.WidgetRef.html" title="struct limn::widget::WidgetRef">WidgetRef</a></code></span><span class='out-of-band'><div class='ghost'></div><a class='srclink' href='../../src/limn/widget/mod.rs.html#50' title='goto source code'>[src]</a></span></h4>
+<div class='docblock'><p>Returns a copy of the value. <a href="https://doc.rust-lang.org/nightly/core/clone/trait.Clone.html#tymethod.clone">Read more</a></p>
+</div><h4 id='method.clone_from' class="method"><span id='clone_from.v' class='invisible'><code>fn <a href='https://doc.rust-lang.org/nightly/core/clone/trait.Clone.html#method.clone_from' class='fnname'>clone_from</a>(&amp;mut self, source: <a class="primitive" href="https://doc.rust-lang.org/nightly/std/primitive.reference.html">&amp;</a>Self)</code></span><span class='out-of-band'><div class='ghost'></div><div class='since' title='Stable since Rust version 1.0.0'>1.0.0</div><a class='srclink' href='https://doc.rust-lang.org/nightly/src/core/clone.rs.html#112-114' title='goto source code'>[src]</a></span></h4>
+<div class='docblock'><p>Performs copy-assignment from <code>source</code>. <a href="https://doc.rust-lang.org/nightly/core/clone/trait.Clone.html#method.clone_from">Read more</a></p>
+</div></div><h3 id='impl-PartialEq' class='impl'><span class='in-band'><code>impl <a class="trait" href="https://doc.rust-lang.org/nightly/core/cmp/trait.PartialEq.html" title="trait core::cmp::PartialEq">PartialEq</a> for <a class="struct" href="../../limn/widget/struct.WidgetRef.html" title="struct limn::widget::WidgetRef">WidgetRef</a></code><a href='#impl-PartialEq' class='anchor'></a></span><span class='out-of-band'><div class='ghost'></div><a class='srclink' href='../../src/limn/widget/mod.rs.html#238-242' title='goto source code'>[src]</a></span></h3>
+<div class='impl-items'><h4 id='method.eq' class="method"><span id='eq.v' class='invisible'><code>fn <a href='https://doc.rust-lang.org/nightly/core/cmp/trait.PartialEq.html#tymethod.eq' class='fnname'>eq</a>(&amp;self, other: &amp;<a class="struct" href="../../limn/widget/struct.WidgetRef.html" title="struct limn::widget::WidgetRef">WidgetRef</a>) -&gt; <a class="primitive" href="https://doc.rust-lang.org/nightly/std/primitive.bool.html">bool</a></code></span><span class='out-of-band'><div class='ghost'></div><a class='srclink' href='../../src/limn/widget/mod.rs.html#239-241' title='goto source code'>[src]</a></span></h4>
+<div class='docblock'><p>This method tests for <code>self</code> and <code>other</code> values to be equal, and is used by <code>==</code>. <a href="https://doc.rust-lang.org/nightly/core/cmp/trait.PartialEq.html#tymethod.eq">Read more</a></p>
+</div><h4 id='method.ne' class="method"><span id='ne.v' class='invisible'><code>fn <a href='https://doc.rust-lang.org/nightly/core/cmp/trait.PartialEq.html#method.ne' class='fnname'>ne</a>(&amp;self, other: <a class="primitive" href="https://doc.rust-lang.org/nightly/std/primitive.reference.html">&amp;</a>Rhs) -&gt; <a class="primitive" href="https://doc.rust-lang.org/nightly/std/primitive.bool.html">bool</a></code></span><span class='out-of-band'><div class='ghost'></div><div class='since' title='Stable since Rust version 1.0.0'>1.0.0</div><a class='srclink' href='https://doc.rust-lang.org/nightly/src/core/cmp.rs.html#121' title='goto source code'>[src]</a></span></h4>
+<div class='docblock'><p>This method tests for <code>!=</code>.</p>
+</div></div><h3 id='impl-Eq' class='impl'><span class='in-band'><code>impl <a class="trait" href="https://doc.rust-lang.org/nightly/core/cmp/trait.Eq.html" title="trait core::cmp::Eq">Eq</a> for <a class="struct" href="../../limn/widget/struct.WidgetRef.html" title="struct limn::widget::WidgetRef">WidgetRef</a></code><a href='#impl-Eq' class='anchor'></a></span><span class='out-of-band'><div class='ghost'></div><a class='srclink' href='../../src/limn/widget/mod.rs.html#244' title='goto source code'>[src]</a></span></h3>
+<div class='impl-items'></div><h3 id='impl-Hash' class='impl'><span class='in-band'><code>impl <a class="trait" href="https://doc.rust-lang.org/nightly/core/hash/trait.Hash.html" title="trait core::hash::Hash">Hash</a> for <a class="struct" href="../../limn/widget/struct.WidgetRef.html" title="struct limn::widget::WidgetRef">WidgetRef</a></code><a href='#impl-Hash' class='anchor'></a></span><span class='out-of-band'><div class='ghost'></div><a class='srclink' href='../../src/limn/widget/mod.rs.html#246-250' title='goto source code'>[src]</a></span></h3>
+<div class='impl-items'><h4 id='method.hash' class="method"><span id='hash.v' class='invisible'><code>fn <a href='https://doc.rust-lang.org/nightly/core/hash/trait.Hash.html#tymethod.hash' class='fnname'>hash</a>&lt;H:&nbsp;<a class="trait" href="https://doc.rust-lang.org/nightly/core/hash/trait.Hasher.html" title="trait core::hash::Hasher">Hasher</a>&gt;(&amp;self, state: <a class="primitive" href="https://doc.rust-lang.org/nightly/std/primitive.reference.html">&amp;mut </a>H)</code></span><span class='out-of-band'><div class='ghost'></div><a class='srclink' href='../../src/limn/widget/mod.rs.html#247-249' title='goto source code'>[src]</a></span></h4>
+<div class='docblock'><p>Feeds this value into the given [<code>Hasher</code>]. <a href="https://doc.rust-lang.org/nightly/core/hash/trait.Hash.html#tymethod.hash">Read more</a></p>
+</div><h4 id='method.hash_slice' class="method"><span id='hash_slice.v' class='invisible'><code>fn <a href='https://doc.rust-lang.org/nightly/core/hash/trait.Hash.html#method.hash_slice' class='fnname'>hash_slice</a>&lt;H&gt;(data: <a class="primitive" href="https://doc.rust-lang.org/nightly/std/primitive.slice.html">&amp;[Self]</a>, state: <a class="primitive" href="https://doc.rust-lang.org/nightly/std/primitive.reference.html">&amp;mut </a>H) <span class="where fmt-newline">where<br>&nbsp;&nbsp;&nbsp;&nbsp;H: <a class="trait" href="https://doc.rust-lang.org/nightly/core/hash/trait.Hasher.html" title="trait core::hash::Hasher">Hasher</a>,&nbsp;</span></code></span><span class='out-of-band'><div class='ghost'></div><div class='since' title='Stable since Rust version 1.3.0'>1.3.0</div><a class='srclink' href='https://doc.rust-lang.org/nightly/src/core/hash/mod.rs.html#202-208' title='goto source code'>[src]</a></span></h4>
+<div class='docblock'><p>Feeds a slice of this type into the given [<code>Hasher</code>]. <a href="https://doc.rust-lang.org/nightly/core/hash/trait.Hash.html#method.hash_slice">Read more</a></p>
+</div></div><h3 id='impl-Debug' class='impl'><span class='in-band'><code>impl <a class="trait" href="https://doc.rust-lang.org/nightly/core/fmt/trait.Debug.html" title="trait core::fmt::Debug">Debug</a> for <a class="struct" href="../../limn/widget/struct.WidgetRef.html" title="struct limn::widget::WidgetRef">WidgetRef</a></code><a href='#impl-Debug' class='anchor'></a></span><span class='out-of-band'><div class='ghost'></div><a class='srclink' href='../../src/limn/widget/mod.rs.html#252-256' title='goto source code'>[src]</a></span></h3>
+<div class='impl-items'><h4 id='method.fmt' class="method"><span id='fmt.v' class='invisible'><code>fn <a href='https://doc.rust-lang.org/nightly/core/fmt/trait.Debug.html#tymethod.fmt' class='fnname'>fmt</a>(&amp;self, f: &amp;mut <a class="struct" href="https://doc.rust-lang.org/nightly/core/fmt/struct.Formatter.html" title="struct core::fmt::Formatter">Formatter</a>) -&gt; <a class="type" href="https://doc.rust-lang.org/nightly/core/fmt/type.Result.html" title="type core::fmt::Result">Result</a></code></span><span class='out-of-band'><div class='ghost'></div><a class='srclink' href='../../src/limn/widget/mod.rs.html#253-255' title='goto source code'>[src]</a></span></h4>
+<div class='docblock'><p>Formats the value using the given formatter.</p>
+</div></div><h3 id='impl-LayoutRef' class='impl'><span class='in-band'><code>impl <a class="trait" href="../../limn_layout/trait.LayoutRef.html" title="trait limn_layout::LayoutRef">LayoutRef</a> for <a class="struct" href="../../limn/widget/struct.WidgetRef.html" title="struct limn::widget::WidgetRef">WidgetRef</a></code><a href='#impl-LayoutRef' class='anchor'></a></span><span class='out-of-band'><div class='ghost'></div><a class='srclink' href='../../src/limn/widget/mod.rs.html#269-273' title='goto source code'>[src]</a></span></h3>
+<div class='impl-items'><h4 id='method.layout_ref' class="method"><span id='layout_ref.v' class='invisible'><code>fn <a href='../../limn_layout/trait.LayoutRef.html#tymethod.layout_ref' class='fnname'>layout_ref</a>(&amp;self) -&gt; <a class="struct" href="../../limn_layout/struct.LayoutVars.html" title="struct limn_layout::LayoutVars">LayoutVars</a></code></span><span class='out-of-band'><div class='ghost'></div><a class='srclink' href='../../src/limn/widget/mod.rs.html#270-272' title='goto source code'>[src]</a></span></h4>
+</div></section>
+    <section id='search' class="content hidden"></section>
+
+    <section class="footer"></section>
+
+    <aside id="help" class="hidden">
+        <div>
+            <h1 class="hidden">Help</h1>
+
+            <div class="shortcuts">
+                <h2>Keyboard Shortcuts</h2>
+
+                <dl>
+                    <dt>?</dt>
+                    <dd>Show this help dialog</dd>
+                    <dt>S</dt>
+                    <dd>Focus the search field</dd>
+                    <dt>&larrb;</dt>
+                    <dd>Move up in search results</dd>
+                    <dt>&rarrb;</dt>
+                    <dd>Move down in search results</dd>
+                    <dt>&#9166;</dt>
+                    <dd>Go to active search result</dd>
+                    <dt>+</dt>
+                    <dd>Collapse/expand all sections</dd>
+                </dl>
+            </div>
+
+            <div class="infos">
+                <h2>Search Tricks</h2>
+
+                <p>
+                    Prefix searches with a type followed by a colon (e.g.
+                    <code>fn:</code>) to restrict the search to a given type.
+                </p>
+
+                <p>
+                    Accepted types are: <code>fn</code>, <code>mod</code>,
+                    <code>struct</code>, <code>enum</code>,
+                    <code>trait</code>, <code>type</code>, <code>macro</code>,
+                    and <code>const</code>.
+                </p>
+
+                <p>
+                    Search functions by type signature (e.g.
+                    <code>vec -> usize</code> or <code>* -> vec</code>)
+                </p>
+            </div>
+        </div>
+    </aside>
+
+    
+
+    <script>
+        window.rootPath = "../../";
+        window.currentCrate = "limn";
+    </script>
+    <script src="../../main.js"></script>
+    <script defer src="../../search-index.js"></script>
+</body>
+</html>
